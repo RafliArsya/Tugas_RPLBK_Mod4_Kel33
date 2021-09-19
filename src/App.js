@@ -2,11 +2,9 @@
 import './App.css';
 import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import { useState, useEffect } from "react";
-import Usestate from "./useState/state"
 import Home from "./home"
 import Credit from "./credit"
-import Useeffect from "./useEffect/effect"
-import Usecontext from "./useContext/context"
+
 
 function App() {
   const [user, setUser] = useState("");
@@ -76,7 +74,7 @@ function App() {
     <BrowserRouter>
       <header>
         <div className="Title">
-          <p>Kelompok 33</p>
+          <h3>Kelompok 33</h3>
         </div>
         <nav>
           <Link className="text" to="/" >
@@ -120,7 +118,7 @@ function App() {
     tglPost="1 September 2021"
     info="Cermati brosur kami ya dan bandingkan harganya, promo yang kami berikan benar benar termurah di Salatiga, 
     tidak percaya ? Silakan datang langsung ke Sultan Copm Store di RUKO Pancasila No 8, atau kunjungi Olshop kami di Shoppe : SultanCompStore33 dan dapatkan Extra Cashback hingga 98%"
-    author="p"/>}/>
+    author="Admin"/>}/>
       </Switch>
     </BrowserRouter>
   );
